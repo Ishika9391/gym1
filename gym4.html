@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB FitClub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #060607;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            margin-top: 40px;
+            position: relative;
+
+        }
+
+        #pura {
+            margin: 100px;
+        }
+
+
+        .header {
+            display: flex;
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+            margin-top: 20px;
+            background-color: grey;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-left: 15%;
+            align-items: center;
+
+        }
+
+        .links a {
+            margin-left: 10%;
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+
+
+        }
+
+        #logo {
+            height: 80px;
+            border-radius: 40px;
+            margin-right: 15px;
+            box-shadow: 0 0 25px 1px #f9ac54;
+        }
+
+        #logob {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+            font-size: larger;
+        }
+
+        .button {
+            text-align: center;
+            height: 50px;
+            border-radius: 20px;
+            width: 180px;
+            margin-top: 10px;
+            background-color: #f9ac54;
+            border: #e6871a;
+            margin-left: auto;
+            font-size: larger;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin-right: 30px;
+        }
+
+
+        .content h4 {
+            margin-bottom: 1px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            color: #f9ac54;
+            text-indent: 40px;
+
+        }
+
+        .content h1 {
+            margin-bottom: 16px;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 96px;
+            color: white;
+
+        }
+
+
+
+        .content h1 span {
+            -webkit-text-fill-color: #f9ac54;
+            -webkit-text-stroke: 1px white;
+            margin-left: 80px;
+        }
+
+        .content p {
+            margin-bottom: 32px;
+            color: white;
+        }
+
+        .image {
+            position: relative;
+
+        }
+
+        .image img {
+            width: 350px;
+            float: right;
+            margin-right: 80px;
+            box-shadow: 0 0 25px 4px #f9ac54;
+            border-radius: 2000px;
+
+
+        }
+
+        .button:hover {
+            background-color: rgb(11, 10, 10);
+            color: #d3d9e0;
+            transform: scale(1.2);
+        }
+
+        #home {
+            position: relative;
+            padding-top: 32px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 32px;
+            margin: 30px;
+        }
+
+        .fitness {
+            margin-bottom: 16px;
+            font-size: 150px;
+            font-weight: 700;
+            line-height: 96px;
+            color: rgb(42, 39, 39);
+            text-align: center;
+
+        }
+
+        #program {
+            color: white;
+            font-size: xx-large;
+            margin-top: 180px;
+            margin-bottom: 20px;
+
+        }
+
+        #programs {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 200px;
+        }
+
+
+
+        .programmany {
+            border: 2px solid white;
+            color: white;
+            padding: 45px;
+            background-color: #1d1d21;
+            width: 200px;
+            height: 340px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+        }
+
+        .programmany img {
+            height: 70px;
+            width: 70px;
+            border-radius: 20px;
+            box-shadow: 0 0 18px 2px #f9ac54;
+        }
+
+        .programbtn {
+            background-color: #4b4b4f;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid #4b4b4f;
+            border: 2px solid #f9ac54;
+        }
+
+        .programbtn:hover {
+            color: black;
+            border: 2px solid white;
+            background-color: #f9ac54;
+        }
+
+        .programmany:hover {
+            border: 2px solid #f9ac54;
+            background-color: #3c3d40;
+            box-shadow: 0 0 25px 4px #f9ac54;
+        }
+
+
+
+
+
+
+
+        .content3 p {
+            margin-bottom: 32px;
+            color: white;
+        }
+
+        .bimage2 {
+            position: relative;
+
+        }
+
+        .bimage2 img {
+            width: 400px;
+            height: 370px;
+            float: left;
+            margin-right: 140px;
+            box-shadow: 0 0 25px 4px #f9ac54;
+            border-radius: 40px;
+
+
+        }
+
+        .classbtn {
+            text-align: center;
+            height: 50px;
+            border-radius: 20px;
+            width: 180px;
+            margin-top: 10px;
+            background-color: #f9ac54;
+            border: #f9ac54;
+            margin-left: auto;
+            font-size: larger;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .classbtn:hover {
+            background-color: gray;
+            color: #111317;
+        }
+
+        #page3 {
+            position: relative;
+            margin-top: 80px;
+            padding-top: 32px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            margin: 30px;
+            margin-bottom: 250px;
+        }
+
+        .content3 h2 {
+            margin-bottom: 1px;
+            margin-top: 10px;
+            font-size: 50px;
+            font-weight: 600;
+            color: white;
+            text-indent: 40px;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .abovejoin {
+            color: white;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .imgjoin img {
+            border-radius: 30px;
+            height: 600px;
+            width: 1100px;
+            border: 1px solid#f9ac54;
+            box-shadow: 0 0 25px 3px #f9ac54;
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+        }
+
+        .whyjoinus {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 200px;
+        }
+
+
+
+        .join {
+            border: 2px solid white;
+            color: white;
+            padding: 30px;
+            background-color: #1d1d21;
+            width: 220px;
+            height: 250px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+
+        }
+
+        .join:hover {
+            border: 2px solid #f9ac54;
+            box-shadow: 0 0 25px 3px #f9ac54;
+
+        }
+
+
+        .join img {
+            height: 70px;
+            width: 70px;
+            border-radius: 20px;
+            box-shadow: 0 0 18px 2px #f9ac54;
+
+        }
+
+        .price {
+            border: 2px solid white;
+            color: white;
+            padding: 45px;
+            background-color: #1d1d21;
+            width: 200px;
+            height: 360px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+
+        }
+
+        #priceplan {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 200px;
+
+        }
+
+        hr {
+            width: 200px;
+        }
+
+        ul {
+            color: white;
+            line-height: 30px;
+        }
+
+        .price h1 {
+            margin-top: 0;
+
+        }
+
+        .pricebtn {
+            text-align: center;
+            height: 50px;
+            border-radius: 20px;
+            width: 180px;
+            margin-top: 8px;
+            background-color: transparent;
+            border: 2px solid #f9ac54;
+            margin-left: auto;
+            font-size: larger;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .pricebtn:hover {
+            background-color: #f9ac54;
+            color: #111317;
+            border: 2px solid white;
+        }
+
+        #plan {
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .price:hover {
+            box-shadow: 0 0 25px 3px #f9ac54;
+        }
+
+        #review {
+            background-color: #25262a;
+            height: 300px;
+            padding: 70px;
+            color: white;
+            align-content: center;
+        }
+
+
+
+
+        #imgshivam {
+            position: relative;
+        }
+
+        #imgshivam img {
+            float: left;
+            height: 80px;
+            width: 80px;
+            border-radius: 170px;
+            border: 1px solid black;
+            margin-right: 2%;
+            background-color: aliceblue;
+            margin-top: 7px;
+        }
+
+        #review h2 {
+            margin-bottom: 0;
+        }
+
+        #review p {
+            margin-top: 0;
+        }
+
+        #imgreview img {
+            width: 15%;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+        }
+
+
+        .footer {
+            display: flex;
+            color: white;
+            display: flex;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            margin: auto;
+            max-width: fit-content;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <img id="logo"
+            src="https://img.freepik.com/free-vector/bodybuilders-fitness-club-logo_1284-45671.jpg?t=st=1729191992~exp=1729195592~hmac=05e13ada7e7d0cede31ae729bf7fe4dee336e18ffe3d198311bbd7ab4e824fd8&w=1380"
+            alt="missing an image">
+
+        <b id="logob">
+            <pre>SB Fitness</pre>
+        </b>
+
+
+
+        <div class="links">
+            <a href="#home" class="linkstyle">Home</a>
+            <a href="#program" class="linkstyle">Program</a>
+            <a href="#plan" class="linkstyle">Service</a>
+            <a href="#review" class="linkstyle">About</a>
+            <a href="#footer" class="linkstyle">Community</a>
+            <a href="#page3" class="linkstyle">Book Class</a>
+        </div>
+        <!-- <input value="Join Now" class="button"> -->
+        <button class="button">Join Now</button>
+
+    </div>
+    <div id="pura"></div>
+    <div id="home">
+        <div class="content">
+            <h4>BEST FITNESS CLUB </h4>
+            <h1> PUSH YOUR <br><span>LIMITS</span> </h1>
+            <p>
+                unleash your potential and embark on a journey towards a stronger,fitter,and more confident you.
+                Sign up
+                for 'Make Your Body Shape' now and witness the incredible transformation your body is capable of !
+            </p>
+            <!-- <input value="Get Started" class="button"> -->
+            <button class="button">Get Started</button>
+        </div>
+        <div class="image">
+            <img src="https://i.postimg.cc/2yt8YWXm/temp-Imagenif-TCI.avif" alt="">
+        </div>
+    </div>
+    <div class="fitness">
+        FITNESS
+    </div>
+    <div id="program">
+        EXPLORE OUR PROGRAM
+    </div>
+    <div id="programs">
+        <div class="programmany">
+            <img src="https://i.postimg.cc/XqgyNR8k/temp-Image-Wxa-Sa5.avif" alt="">
+            <h2>Strength</h2>
+            <p>Embrace the essence of strength as we delve into its various dimensions physical, mental, and
+                emotional.</p>
+            <!-- <input value="Join Now" class="programbtn button"> -->
+            <button class="programbtn">Join Now</button>
+        </div>
+        <div class="programmany">
+            <img src="https://i.postimg.cc/XvyGBGLJ/temp-Image405-JSP.avif" alt="">
+            <h2>Physical Fitness</h2>
+            <p>It encompasses a range of activities that improve health, strength, flexibility, and overall
+                well-being.</p>
+            <!-- <input value="Join Now" class="programbtn button"> -->
+            <button class="programbtn">Join Now</button>
+        </div>
+        <div class="programmany">
+            <img src="https://i.postimg.cc/4NLm8bFy/temp-Image-Ht-XRHe.avif" alt="">
+            <h2>Fat Loss</h2>
+            <p>Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.
+            </p>
+            <!-- <input value="Join Now" class="programbtn button"> -->
+            <button class="programbtn">Join Now</button>
+        </div>
+        <div class="programmany">
+            <img src="https://i.postimg.cc/v8v1ndrW/temp-Image5bnegn.avif" alt="">
+            <h2>Weight Gain</h2>
+            <p>Designed for individuals, our program offers an effective approach to gaining weight in a sustainable
+                manner.</p>
+            <!-- <input value="Join Now" class="programbtn button"> -->
+            <button class="programbtn">Join Now</button>
+        </div>
+    </div>
+    <div id="page3">
+        <div class="bimage2">
+            <img src="https://i.imghippo.com/files/IehGq1729297709.webp" alt="">
+        </div>
+        <div class="content3">
+            <h2> THE CLASSES YOU WILL GET HERE </h2>
+            <p>
+                Led by our team of expert and motivational instructors, "The Class You Will Get Here" is a
+                high-energy, results-driven session that combines a perfect blend of cardio, strength training, and
+                functional exercises.
+                Each class is carefully curated to keep you engaged and challenged, ensuring you never hit a plateau
+                in your fitness endeavors.
+            </p>
+            <!-- <input value="Book A Class" class="classbtn"> -->
+            <button class="classbtn">Book a Class</button>
+        </div>
+    </div>
+    <div class="whyjoin">
+        <div class="abovejoin">
+            <h2> WHY JOIN US ? </h2>
+            <p>
+                Our diverse membership base creates a friendly and supportive <br>atmosphere, where you can make
+                friends and stay motivated.
+            </p>
+        </div>
+        <div class="imgjoin">
+            <center><img src="https://i.postimg.cc/kgqfcCzq/temp-Image-TWDDNg.avif" alt=""></center>
+        </div>
+    </div>
+    <div class="whyjoinus">
+        <div id="join1" class="join">
+            <div class="joinimg">
+                <center> <img src="https://i.postimg.cc/SshsXZjT/temp-Image-Ro4v-M4.avif" alt=""></center>
+            </div>
+            <h2>Personal Trainer </h2>
+            <p>Unlock your potential with our expert Personal Trainers.</p>
+
+        </div>
+        <div id="join2" class="join">
+            <div class="joinimg">
+                <center> <img src="https://i.postimg.cc/bNkqn0c4/temp-Imageq-GKx-EQ.avif" alt=""></center>
+            </div>
+            <h2>Practice Sessions</h2>
+            <p>Elevate your fitness with practice sessions.</p>
+
+        </div>
+        <div id="join3" class="join">
+            <div class="joinimg">
+                <center><img src="https://i.postimg.cc/GphR6Z81/temp-Imagexb-FM0o.avif" alt=""></center>
+            </div>
+            <h2>Good Management</h2>
+            <p>Supportive management, for your fitness success.</p>
+
+        </div>
+    </div>
+    <div id="plan">
+        <h1>OUR PRICING PLAN</h1>
+        <p>Our pricing plan comes with various membership tiers, each tailored to <br>
+            cater to different preferences and fitness aspirations.</p>
+    </div>
+    <div id="priceplan">
+        <div class="price">
+
+            <h2>Basic Plan</h2>
+            <h1>1k Rs</h1>
+            <hr>
+            <ul type="">
+                <li>Smart workout plan</li>
+                <li>At home workouts </li>
+            </ul>
+
+            <!-- <input value="Join Now" class="pricebtn">-->
+            <button class="pricebtn">Join Now</button>
+
+        </div>
+        <div class="price">
+            <h2>Weekly Plan</h2>
+            <h1>700 Rs</h1>
+            <hr>
+            <ul type="disc">
+                <li>PRO Gym</li>
+                <li>Smart workout plan</li>
+                <li>At home workouts </li>
+            </ul>
+
+            <!-- <input value="Join Now" class="pricebtn"> -->
+            <button class="pricebtn">Join Now</button>
+
+        </div>
+        <div class="price">
+            <h2>Monthly Plan</h2>
+            <h1>3K Rs</h1>
+            <hr>
+            <ul type="disc">
+                <li>ELITE Gyms & Classes</li>
+                <li>PRO Gym</li>
+                <li>Smart workout plan</li>
+                <li>At home workouts </li>
+                <li>Personal Training</li>
+            </ul>
+
+
+            <!-- <input value="Join Now" class="pricebtn"> -->
+            <button class="pricebtn">Join Now</button>
+        </div>
+    </div>
+    </div>
+    <div id="review">
+        <h2>MEMBER REVIEW</h2>
+        <p>What truly sets this gym apart is their expert team of trainers. The trainers are knowledgeable,
+            approachable, and genuinely invested in helping members achieve their fitness goals. They take the time to
+            understand individual needs and create personalized workout plans, ensuring maximum results and safety.</p>
+        <div id="imgreview">
+            <img src="https://i.postimg.cc/YCdZLj9J/temp-Imagev-Xm-OO6.avif" alt="">
+        </div>
+
+        <div id="imgshivam">
+            <img src="https://i.postimg.cc/L4VT8whW/temp-Image-Nu3-Mut.avif" alt="">
+        </div>
+        <div id="aboutshivam">
+            <h2> Shivam Bhadana</h2>
+            <p> GYM Owner</p>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <div class="footer">
+            <div id="fdiv1">
+                <div class="footerlogo">
+
+                    <img src="https://img.freepik.com/free-vector/bodybuilders-fitness-club-logo_1284-45671.jpg?t=st=1729191992~exp=1729195592~hmac=05e13ada7e7d0cede31ae729bf7fe4dee336e18ffe3d198311bbd7ab4e824fd8&w=1380"
+                        alt="" height="80px">
+                    <b>SB Fitness</b>
+                </div>
+                <p>Take the first step towards a healthier, stronger you with our unbeatable pricing plans. Let's sweat,
+                    achieve, and conquer together!</p>
+                <div class="contactlogo">
+                    <a href="#"><img src="https://i.imghippo.com/files/Cufaq1729380675.png" alt=""
+                            style="background-color: #f9ac54;"></a>
+                    <a href="#"><img src="https://i.imghippo.com/files/nsGMw1729380774.png" alt=""
+                            style="background-color: #f9ac54;"></a>
+                    <a href="#"><img src="https://i.imghippo.com/files/g6vUN1729380804.png" alt=""
+                            style="background-color: #f9ac54;"></a>
+                </div>
+            </div>
+            <div id="fdiv2">
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer2">
+            &copy;SBFitness || All Rights Reserved
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
